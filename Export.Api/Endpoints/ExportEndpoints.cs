@@ -50,6 +50,13 @@ public static class ExportEndpoints
                         contentType: "application/zip",
                         fileDownloadName: fileName);
                 }
+                catch (ArgumentException ex)
+                {
+                    return Results.BadRequest(new
+                    {
+                        Error = ex.Message
+                    });
+                }
                 catch (HttpRequestException ex)
                 {
                     return Results.Problem(
