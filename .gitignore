@@ -1,0 +1,38 @@
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# .NET build output
+**/bin/
+**/obj/
+TestResults/
+**/TestResults/
+
+# SQLite databases
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Uploaded document storage
+**/storage/
+**/data/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+**/appsettings.Development.local.json
+**/secrets.json
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Docker override files
+docker-compose.override.yml
